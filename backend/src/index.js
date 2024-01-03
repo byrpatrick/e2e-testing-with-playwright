@@ -57,6 +57,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Hello World!" });
+});
+
 app.use("/api", apiRouter);
 apiRouter.use("/messages", messagesRouter);
 

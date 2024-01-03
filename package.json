@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fe": "cd frontend && npm run dev",
+    "be": "cd backend && npm run dev",
     "test": "playwright test",
     "test:ui": "playwright test --ui"
   },
